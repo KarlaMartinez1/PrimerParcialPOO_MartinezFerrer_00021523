@@ -1,3 +1,5 @@
+package Articulo;
+
 public class Articulo {
     String nombre;
     String modelo;
@@ -45,6 +47,8 @@ public class Articulo {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
+
+
 
 
 }

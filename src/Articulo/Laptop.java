@@ -1,4 +1,8 @@
-public class Laptop extends Articulo{
+package Articulo;
+
+import Articulo.Articulo;
+
+public class Laptop extends Articulo {
     double RAM;
     String fabricante;
 
@@ -25,7 +29,7 @@ public class Laptop extends Articulo{
         this.fabricante = fabricante;
     }
 
-    public class ObtenerPrecio(int Precio){
-
+    public double obtenerPrecio(double precio){
+        return precio;
     }
 }

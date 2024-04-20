@@ -1,17 +1,18 @@
-import java.sql.SQLOutput;
+import Articulo.Articulo;
+
 import java.util.Scanner;
 import java.util.ArrayList;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
+    static ArrayList<Articulo> listaArticulos = new ArrayList<Articulo>();
     public static void main(String[] args) {
 
-        ArrayList<Articulo>;
-        Scanner sc = new Scanner();
+        Scanner sc = new Scanner(System.in);
 
         do{
-            int opcion;
+            int opcion = sc.nextInt();
             System.out.println("Seleccione una opcion: ");
             System.out.println("1: Crear articulo electronico ");
             System.out.println("2. Modificar articulo electronico ");
@@ -22,15 +23,15 @@ public class Main {
 
             switch (opcion){
                 case 1:
-                    System.out.println("Escriba: ");
-
-                    System.out.println("nombre del articulo: ");
-                    System.out.println("Modelo: ");
-                    System.out.println("Descripcion: ");
-                    System.out.println("precio: ");
+                    agregarArticulo();
                     break;
                 case 2:
                     System.out.println("Nombre del artiuclo que desea modificar: ");
+
+                    break;
+                case 3:
+                    System.out.println("Consulta de articulo electronico: ");
+                    break;
 
             }
 
@@ -38,4 +39,20 @@ public class Main {
         }while (opcion != 4);
 
     }
+
+    private static void agregarArticulo(){
+        Scanner sc = new Scanner(System.in);
+        String nombre;
+        String modelo;
+        String descripcion;
+        double precio;
+
+        System.out.println("nombre del articulo que desea agregar: ");
+        nombre = sc.nextLine();
+        System.out.println("");
+
+
+
+    }
+
 }
